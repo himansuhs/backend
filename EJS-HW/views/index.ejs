@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <% if (locals.totalcount) {%>
+    <h1>there are total <%= locals.totalcount %>
+    </h1>
+    <% }else {%>
+      <form action="/submit" method="post">
+        <label for="firstname">first Name</label>
+        <input type="text" name="firstname">
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname">
+        <button type="submit">submit</button>
+      </form>
+
+      <% }%>
+</body>
+
+</html>

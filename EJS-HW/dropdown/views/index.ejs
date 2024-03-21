@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>choose what u want</h1>
+  <form action="/submit" method="post">
+    <select name="day">
+      <option value="sunday">sunday</option>
+      <option value="monday">monday</option>
+      <option value="tuesday">tuesday</option>
+      <option value="wednesday">wednesday</option>
+      <option value="thursday">thursday</option>
+      <option value="friday">friday</option>
+      <option value="saturday">saturday</option>
+
+    </select>
+    <input type="submit" value="submit">
+  </form>
+  <h1>
+    <%= locals.message %>
+  </h1>
+</body>
+
+</html>
